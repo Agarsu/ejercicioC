@@ -1,0 +1,39 @@
+Given 2 sequences of DNA of the SAME length (asked to the user with input())
+    check that both have same length-yes
+    	if not write an error an start again-yes
+    transform them to RNA-yes
+    make a reverse and reverse complementary-yes
+    store in a dictionary all this data-yes
+
+    sequences = {seq1:{seq:AC, rna:AC, seqrev:GC, seqrevcomp:CG, 
+	prot:TS, protrecvomp:RR},
+	seq2:{...}
+    }
+
+    Extra point: add a seq name in the dict. Hint, ask first for 
+    seqname, then for the secuence letters, both with input() and 
+    store in dict.
+	-yes-
+
+    pairwise comparison: Compare seq1 vs seq2 and find number of 
+    differences and % of differences
+	-yes-
+
+    print message like: seq1 vs seq2 has 10 (10%) differences in 100pb
+    	-yes-
+
+    use the function get_codon_table (created in C for loading the 
+    codons dictionary
+
+    Note: for protein conversion, create a function to split DNA string	   in triplets and store in a list of triplets and ask the 
+    codon_table_dictionary created in the C task
+
+    triplets = get_triplets_from_sequence("atcgct...")
+
+    print(triplets)
+
+    ["atc","gct"...]
+
+    loop for triplets and aa.append = codon_table[triplet]
+
+    NOTE: remember to create a void list before the loop (aa = [])
